@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1><%= @article.title %></h1>
+      <p><%= @article.content %></p>
+      <%= link_to "Remove article", article_path(@article), method: :delete, data: { confirm: "Are you sure??" } %>
+        <%= link_to "Edit article", edit_article_path(@article) %>
+    </div>
+  </div>
+</div>
